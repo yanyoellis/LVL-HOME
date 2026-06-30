@@ -99,7 +99,35 @@ nav a:hover::after, nav a:focus-visible::after { transform: scaleX(1); transform
 .eyebrow { margin: 0 0 24px; color: var(--gold); font-size: 10px; letter-spacing: .25em; text-transform: uppercase; }
 .intro h1, .closing h2 { margin: 0; font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; font-weight: 300; letter-spacing: -.055em; }
 .intro h1 { font-size: clamp(48px, 4.9vw, 76px); line-height: .94; }
-.intro__copy > p:last-child { max-width: 230px; margin: 24px 0 0 4px; color: #92989d; font-size: 12px; line-height: 1.7; }
+.intro__copy > p:last-of-type { max-width: 230px; margin: 24px 0 0 4px; color: #92989d; font-size: 12px; line-height: 1.7; }
+.case-study-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 164px;
+  height: 38px;
+  margin: 24px 0 0 4px;
+  padding: 0 16px;
+  color: var(--gold);
+  border: 1px solid rgba(205,181,121,.42);
+  background: rgba(6, 11, 17, .38);
+  text-decoration: none;
+  font-size: 8px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  transition: color .28s var(--ease), background .28s var(--ease), border-color .28s var(--ease), transform .28s var(--ease);
+}
+.case-study-link:hover,
+.case-study-link:focus-visible {
+  color: #17130c;
+  background: var(--gold);
+  border-color: var(--gold);
+  transform: translateY(-1px);
+}
+.case-study-link:focus-visible {
+  outline: 1px solid var(--gold-bright);
+  outline-offset: 4px;
+}
 .intro__index { position: absolute; left: clamp(28px, 4.5vw, 76px); top: 715px; color: #73787c; font-size: 9px; letter-spacing: .24em; writing-mode: vertical-rl; }
 .scroll-cue { position: absolute; right: clamp(28px, 4.5vw, 76px); top: 710px; display: flex; align-items: center; gap: 14px; color: #747a80; font-size: 9px; letter-spacing: .18em; text-transform: uppercase; transform: rotate(90deg) translateX(100%); transform-origin: right bottom; }
 .scroll-cue i { width: 54px; height: 1px; background: linear-gradient(90deg, var(--gold), transparent); }
